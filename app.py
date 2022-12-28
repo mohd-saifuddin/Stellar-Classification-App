@@ -14,8 +14,8 @@ st.markdown(
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    alpha = st.slider(label='Ascension angle', min_value=0.0, max_value=360.0, value=150.0)
-    delta = st.slider(label='Declination angle', min_value=0.0, max_value=360.0, value=150.0)
+    alpha = 150 # It can be any random value between 0 to 360. Doesn't contribute to model prediction.
+    delta = 150 # It can be any random value between 0 to 360. Doesn't contribute to model prediction.
     u = st.slider(label='Ultraviolet', min_value=0.0, max_value=30.0, value=22.0)
     g = st.slider(label='Green', min_value=0.0, max_value=30.0, value=22.0)
     r = st.slider(label='Red', min_value=0.0, max_value=30.0, value=25.0)
