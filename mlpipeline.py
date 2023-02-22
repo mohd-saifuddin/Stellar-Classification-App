@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-class Pipline(object):
+class Pipeline(object):
     """
     This class is a pipeline mechanism to feed the 
     query datapoint into the model for prediction.

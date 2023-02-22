@@ -1,5 +1,5 @@
 import streamlit as st
-from mlpipeline import Pipline
+from mlpipeline import Pipeline
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -30,7 +30,7 @@ with col1:
                          max_value=10.0, value=2.0)
 
 data = [[alpha, delta, u, g, r, i, z, redshift]]
-pipe = Pipline(data=data)
+pipe = Pipeline(data=data)
 conclusion, fig, pred_class = pipe.pipeline()
 image_credits = "A random {} image taken from nasa.gov image gallery.".format(
     pred_class.lower())
